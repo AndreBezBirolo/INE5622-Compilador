@@ -1,0 +1,21 @@
+<ng-container *ngIf="tableOfSymbols">
+  <mat-table [dataSource]="tableOfSymbols">
+    <ng-container matColumnDef="variableName">
+      <mat-header-cell *matHeaderCellDef> Nome da variável</mat-header-cell>
+      <mat-cell *matCellDef="let entry"> {{entry[0]}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="occurrences">
+      <mat-header-cell *matHeaderCellDef> Ocorrência</mat-header-cell>
+      <mat-cell *matCellDef="let entry"> {{entry[1].numberOfOccurrences}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="variableType">
+      <mat-header-cell *matHeaderCellDef> Tipo de variável</mat-header-cell>
+      <mat-cell *matCellDef="let entry"> {{entry[1].varType}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="columnsToDisplay"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: columnsToDisplay;"></mat-row>
+  </mat-table>
+</ng-container>

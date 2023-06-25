@@ -1,0 +1,17 @@
+<ng-container *ngIf="parserData">
+  <mat-table [dataSource]="parserData">
+    <ng-container matColumnDef="steps">
+      <mat-header-cell *matHeaderCellDef> Passos do Analisador Sintatico</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.steps}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="tokenSteps">
+      <mat-header-cell *matHeaderCellDef> Tokens Lidos</mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.tokenSteps}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</ng-container>
+
