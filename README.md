@@ -17,9 +17,11 @@ Para executar o projeto, você precisa ter instalado o Node.js e o Angular CLI n
 abaixo:
 
 * Clone este repositório para um diretório local.
-* Abra um terminal na pasta do projeto e execute o comando npm install para instalar as dependências necessárias.
+* Abra um terminal na pasta do projeto e execute o comando
+  `npm install`
+  para instalar as dependências necessárias.
 * Execute o comando ng serve para iniciar o servidor de desenvolvimento do Angular.
-* Acesse a aplicação no endereço http://localhost:4200.
+* Acesse a aplicação no endereço `http://localhost:4200`.
 
 ## Como usar a aplicação
 
