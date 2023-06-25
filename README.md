@@ -20,7 +20,7 @@ abaixo:
 * Abra um terminal na pasta do projeto e execute o comando
   `npm install`
   para instalar as dependências necessárias.
-* Execute o comando ng serve para iniciar o servidor de desenvolvimento do Angular.
+* Execute o comando `ng serve` para iniciar o servidor de desenvolvimento do Angular.
 * Acesse a aplicação no endereço `http://localhost:4200`.
 
 ## Como usar a aplicação
