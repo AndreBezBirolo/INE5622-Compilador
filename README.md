@@ -1,27 +1,29 @@
-# INE5622Compilador
+# Projeto Angular e Angular Material com Análise Léxica e Sintática
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
+Este projeto consiste em uma aplicação web que permite ao usuário escrever código em uma linguagem de programação
+fictícia e verificar se o código é válido do ponto de vista léxico e sintático. O projeto foi desenvolvido por **André
+J. Bez Birolo**, **Rafaela Tasso**, **Beatriz Valio Weiss** e **Victor Araujo** como parte da disciplina de Introdução a
+Compiladores (INE5622) do curso de Sistemas de Informação da Universidade Federal de Santa Catarina (UFSC).
 
-## Development server
+## Tecnologias utilizadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* **Angular**: framework front-end para criar interfaces dinâmicas e interativas com o usuário.
+* **Angular Material**: biblioteca de componentes visuais baseados no Material Design para melhorar a experiência do
+  usuário.
 
-## Code scaffolding
+## Como executar o projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para executar o projeto, você precisa ter instalado o Node.js e o Angular CLI na sua máquina. Em seguida, siga os passos
+abaixo:
 
-## Build
+* Clone este repositório para um diretório local.
+* Abra um terminal na pasta do projeto e execute o comando npm install para instalar as dependências necessárias.
+* Execute o comando ng serve para iniciar o servidor de desenvolvimento do Angular.
+* Acesse a aplicação no endereço http://localhost:4200.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Como usar a aplicação
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+A aplicação possui uma interface simples e intuitiva, composta por um painel que é o editor de código. No editor de
+código, você pode digitar ou colar o código na linguagem fictícia que deseja analisar. O código deve seguir as regras
+léxicas e sintáticas definidas na gramática do projeto, que está disponível no relatório. Quando clicar para executar a
+análise irá aparecer um novo painel sendo ele o console de saída.
