@@ -29,7 +29,6 @@ export class AppComponent {
 
   public onSubmitClick(): void {
     if (this.input?.valid) {
-      this.input?.disable();
       this.lexerResult = this.analisadorLexicoService.lexicon(this.input.value);
       this.lexerTable = Array.from(this.lexerResult.tableOfSymbols.entries());
       this.parserResult = this.analisadorSintaticoService.parser(this.lexerResult.result);
@@ -38,7 +37,6 @@ export class AppComponent {
   }
 
   public onClearClick(): void {
-    this.input?.enable();
     this.reset();
   }
 

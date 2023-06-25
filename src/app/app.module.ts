@@ -14,7 +14,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { TabelaSimbolosLexicoComponent } from './shared/components/tabela-simbolos-lexico/tabela-simbolos-lexico.component';
-import { TabelaSimbolosSintaticoComponent } from './shared/components/tabela-simbolos-sintatico/tabela-simbolos-sintatico.component';
+import { TabelaSintaticoComponent } from './shared/components/tabela-sintatico/tabela-sintatico.component';
 import { TokensLexicoComponent } from './shared/components/tokens-lexico/tokens-lexico.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatDividerModule } from '@angular/material/divider';
@@ -27,7 +27,7 @@ registerLocaleData(ptBr)
     HeaderComponent,
     FooterComponent,
     TabelaSimbolosLexicoComponent,
-    TabelaSimbolosSintaticoComponent,
+    TabelaSintaticoComponent,
     TokensLexicoComponent
   ],
   imports: [

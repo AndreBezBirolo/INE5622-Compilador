@@ -12,7 +12,8 @@
 
     <ng-container matColumnDef="variableType">
       <mat-header-cell *matHeaderCellDef> Tipo de variável</mat-header-cell>
-      <mat-cell *matCellDef="let entry"> {{entry[1].varType}} </mat-cell>
+      <mat-cell *matCellDef="let entry"><span
+        [ngClass]="entry[1].varType === 'UNDEFINED' ? 'red' : ''">{{entry[1].varType}}</span></mat-cell>
     </ng-container>
 
     <mat-header-row *matHeaderRowDef="columnsToDisplay"></mat-header-row>

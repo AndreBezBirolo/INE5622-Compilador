@@ -7,7 +7,7 @@
 
     <ng-container matColumnDef="tokenSteps">
       <mat-header-cell *matHeaderCellDef> Tokens Lidos</mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.tokenSteps}} </mat-cell>
+      <mat-cell *matCellDef="let element"><p [innerHTML]="highlightUnknown(element.tokenSteps)"></p></mat-cell>
     </ng-container>
 
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>

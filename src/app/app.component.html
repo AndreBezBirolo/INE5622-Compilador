@@ -9,14 +9,8 @@
             <div class="divider"></div>
             <mat-form-field appearance="fill" class="full-width">
               <mat-label>Digite seu código:</mat-label>
-              <textarea formControlName="input" matInput rows="5"></textarea>
+              <textarea formControlName="input" matInput rows="10"></textarea>
             </mat-form-field>
-            <button (click)="onSubmitClick()" *ngIf="form.get('input')?.enabled" class="full-width button-large"
-                    color="primary"
-                    mat-flat-button>
-              Executar Análise
-            </button>
-
           </form>
         </section>
 
@@ -38,9 +32,14 @@
           <app-tabela-simbolos-sintatico [parserData]="parserResult"></app-tabela-simbolos-sintatico>
         </section>
 
-        <button (click)="onClearClick()" *ngIf="form.get('input')?.disabled"
-                class="full-width clear-button button-large"
+        <button (click)="onSubmitClick()" class="full-width button-large"
                 color="primary"
+                mat-flat-button>
+          Executar Análise
+        </button>
+        <button (click)="onClearClick()"
+                class="full-width clear-button button-large"
+                color="warn"
                 mat-flat-button>
           Limpar
         </button>
