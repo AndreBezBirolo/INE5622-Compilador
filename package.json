@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href=/INE5622-Compilador/ && angular-cli-ghpages --dir=dist/ine5622-compilador",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
